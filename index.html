@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物理学院2023级五班南京行活动</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+            line-height: 1.6;
+            background: var(--background-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            text-align: center;
+            color: var(--secondary-color);
+            animation: fadeIn 1s ease-out;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .page-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary-color);
+            margin: 10px auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            animation: fadeIn 0.6s ease-out;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .simple-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        .simple-table th,
+        .simple-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .simple-table tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .notice-icon {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        /* 新增内容样式 */
+        .bulleted-list {
+            padding-left: 1.5em;
+            list-style: none;
+        }
+
+        .bulleted-list li {
+            margin: 0.8em 0;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .bulleted-list li::before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        mark.highlight-red {
+            background: #ffebee;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .page-title { font-size: 2rem; }
+            .card { padding: 1rem; margin: 1rem; }
+            .simple-table { font-size: 0.9em; }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--secondary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <header>
+            <h1 class="page-title">物理学院2023级五班南京行活动</h1>
+        </header>
+
+        <!-- 时间安排 -->
+        <div class="card">
+            <h2>📍 总体时间安排</h2>
+            <table class="simple-table">
+                <tbody>
+                    <tr><td>7：30</td><td>科大东区集合，乘坐大巴前往南京博物院🚌</td></tr>
+                    <tr><td>9：30—11：30</td><td>参观南京博物院</td></tr>
+                    <tr><td>12：00—13：00</td><td>参观中山陵</td></tr>
+                    <tr><td>13：30—14：30</td><td>南京大牌档（中山陵店）用餐</td></tr>
+                    <tr><td>15：00—16：30</td><td>参观南京总统府</td></tr>
+                    <tr><td>17：30—19：30</td><td>夫子庙夜游（选）</td></tr>
+                    <tr><td>20：00</td><td>返程大巴启程，南京之旅结束</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 交通信息 -->
+        <div class="card">
+            <h2>📍 交通</h2>
+            <p>我们统一乘坐大巴出行，车牌：<span class="highlight-text">（预约好之后更新）</span>，司机联系方式：<span class="highlight-text">（预约好之后更新）</span>。</p>
+        </div>
+
+        <!-- 南京博物院 -->
+        <div class="card">
+            <h2>📍 南京博物院</h2>
+            <ul class="bulleted-list">
+                <li><i class="fas fa-link notice-icon"></i>博物院官网：<a href="https://www.njmuseum.com/zh">https://www.njmuseum.com/zh</a></li>
+                <li><i class="fas fa-ticket-alt notice-icon"></i>门票预约：南京博物院官方小程序首页➡️预约购票➡️参观预约➡️预约普通票➡️选择3月22日（下周六）上午场预约</li>
+            </ul>
+        </div>
+
+        <!-- 中山陵 -->
+        <div class="card">
+            <h2>📍 中山陵景区</h2>
+            <ul class="bulleted-list">
+                <li><i class="fas fa-info-circle notice-icon"></i>景区介绍：<a href="https://baike.baidu.com/item/中山陵景区/2507265">百度百科词条</a></li>
+                <li><i class="fas fa-ticket-alt notice-icon"></i>门票预约：钟山风景区微信小程序➡️预约购票里向左滑动至中山陵➡️点击立即预订前往美团小程序，选择日期为3月22日（星期六），场次为10:30—12:30）</li>
+            </ul>
+        </div>
+
+        <!-- 总统府 -->
+        <div class="card">
+            <h2>📍 南京总统府</h2>
+            <ul class="bulleted-list">
+                <li><i class="fas fa-link notice-icon"></i>景区官网：<a href="https://www.njztf.cn/index.html">https://www.njztf.cn/index.html</a></li>
+                <li><i class="fas fa-ticket-alt notice-icon"></i>门票预约：<mark class="highlight-red">学生票17.5元</mark>，南京总统府微信小程序首页➡️购买门票➡️选择日期（3月22日）➡️学生票➡️付款</li>
+            </ul>
+        </div>
+
+        <!-- 夫子庙 -->
+        <div class="card">
+            <h2>📍 夫子庙夜游（选）</h2>
+            <ul class="bulleted-list">
+                <li><i class="fas fa-map-signs notice-icon"></i>行程路线：江南贡院 ➡️ 中国科举博物馆 ➡️ 夫子庙吃小吃</li>
+                <li><i class="fas fa-comment-dots notice-icon"></i>特别说明：夫子庙区域可能商业化程度较高，提供自由活动/直接返程选项，最终方案将通过班级群投票确定</li>
+            </ul>
+        </div>
+
+        <!-- 注意事项 -->
+        <div class="card">
+            <h2>📍 注意事项</h2>
+            <ol>
+                <li><i class="fas fa-clipboard-list notice-icon"></i>需填写活动报名表格（学院统一购买保险）</li>
+                <li><i class="fas fa-wallet notice-icon"></i><mark class="highlight-red">南京总统府门票需自费</mark>，预约后需在表格中报备</li>
+                <li><i class="fas fa-id-card notice-icon"></i>必须携带身份证、学生证等有效证件</li>
+                <li><i class="fas fa-calendar-day notice-icon"></i>总统府需<mark class="highlight-red">提前两天</mark>预约（3月20日周四完成）</li>
+                <li><i class="fas fa-umbrella notice-icon"></i>建议携带雨具应对天气变化</li>
+                <li><i class="fas fa-users notice-icon"></i>集体活动期间请勿擅自离队</li>
+            </ol>
+        </div>
+
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </article>
+
+    <script>
+        // 返回顶部功能
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 300);
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 表格行动画
+        document.querySelectorAll('.simple-table tr').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.transform = 'scale(1.02)';
+                row.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+            });
+            row.addEventListener('mouseleave', () => {
+                row.style.transform = 'scale(1)';
+                row.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

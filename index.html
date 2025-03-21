@@ -108,7 +108,6 @@
             border-radius: 3px;
         }
 
-        /* 封面图样式 */
         .header-image {
             width: 100%;
             max-height: 400px;
@@ -157,7 +156,6 @@
     <article class="card">
         <header>
             <h1 class="page-title">物理学院2023级五班南京行活动</h1>
-            <!-- 封面图 -->
             <img 
                 class="header-image" 
                 src="https://RuochengWang.github.io/Nanjing_Trip/images/cover.jpg" 
@@ -206,6 +204,57 @@
             </ul>
         </div>
 
+        <!-- 餐饮菜单 -->
+        <div class="card">
+            <h2>📍 午餐：南京大牌档</h2>
+            <ul class="bulleted-list">
+                <li>甜点一例
+                    <ul class="bulleted-list">
+                        <li>茉莉桂花拉糕×2</li>
+                    </ul>
+                </li>
+                <li>凉菜五例
+                    <ul class="bulleted-list">
+                        <li>南京素什锦</li>
+                        <li>金陵烤鸭</li>
+                        <li>大牌鸭血旺</li>
+                        <li>王府泡椒鸡</li>
+                        <li>招牌盐水鸭</li>
+                    </ul>
+                </li>
+                <li>热菜八例
+                    <ul class="bulleted-list">
+                        <li>鸡汁白鱼</li>
+                        <li>金牌响油鳝糊铁锅拌</li>
+                        <li>金陵四季全家福</li>
+                        <li>铁板鱼籽煸大虾</li>
+                        <li>铜锅贴饼扁豆焖肉</li>
+                        <li>腊味扁豆丝</li>
+                        <li>椒绿金汤鱼</li>
+                        <li>江南水乡石纹煲</li>
+                    </ul>
+                </li>
+                <li>汤类两例
+                    <ul class="bulleted-list">
+                        <li>招牌虾黄豆腐</li>
+                        <li>秧草姜黄豆腐煨河蚌</li>
+                    </ul>
+                </li>
+                <li>主食两例
+                    <ul class="bulleted-list">
+                        <li>秦状元薄饼肉松</li>
+                        <li>天王烤鸭包×4</li>
+                    </ul>
+                </li>
+                <li>饮品两例
+                    <ul class="bulleted-list">
+                        <li>有花有果春姑娘</li>
+                        <li>有颜有色红姑娘</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
         <!-- 总统府 -->
         <div class="card">
             <h2>📍 南京总统府</h2>
@@ -244,7 +293,6 @@
     </article>
 
     <script>
-        // 返回顶部功能
         const backToTop = document.getElementById('backToTop');
         window.addEventListener('scroll', () => {
             backToTop.classList.toggle('show', window.scrollY > 300);
@@ -254,7 +302,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // 表格行动画
         document.querySelectorAll('.simple-table tr').forEach(row => {
             row.addEventListener('mouseenter', () => {
                 row.style.transform = 'scale(1.02)';
